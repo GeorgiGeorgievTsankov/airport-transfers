@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.header-background {
+    background-image: url(./img/header-background.jpg);
+    background-size: cover; /* За да покрива целия контейнер */
+    background-position: center; /* За да е центрирано изображението */
+    background-repeat: no-repeat; /* За да не се повтаря изображението */
+    width: 100%;
+    height: 100vh;
+    display: flex; /* За да можеш да центрираш съдържанието вътре */
+    align-items: center; /* Вертикално центриране */
+    justify-content: center; /* Хоризонтално центриране */
+    color: white; /* Цвят на текста */
+    text-align: center; /* Центриране на текста */
+    font-family: Arial, sans-serif; /* Примерен шрифт */
+    padding: 20px; /* Вътрешно разстояние */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Лека сянка за дълбочина */
+}
