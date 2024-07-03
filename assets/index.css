@@ -4,12 +4,13 @@
 }
 
 .header-background {
-  background-image: url(./img/header-background.jpg);
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2) url(./img/header-background.jpg);
+  background-blend-mode: darken;
   background-size: cover; /* За да покрива целия контейнер */
   background-position: center; /* За да е центрирано изображението */
   background-repeat: no-repeat; /* За да не се повтаря изображението */
-  width: 100%;
-  height: 100vh;
   display: flex; /* За да можеш да центрираш съдържанието вътре */
   align-items: center; /* Вертикално центриране */
   justify-content: center; /* Хоризонтално центриране */
@@ -96,6 +97,10 @@ a {
   text-decoration: none;
 }
 
+li a{
+    text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -108,7 +113,6 @@ img {
   padding: 10px;
 }
 
-
 /*===== CLASS CSS ===== */
 .section-title {
   position: relative;
@@ -120,7 +124,6 @@ img {
 }
 
 .section-title::after {
-  
   width: 64px;
   height: 0.18rem;
   left: 0;
@@ -178,14 +181,14 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: rgba(250, 247, 247, 0.6);
+  background-color: white;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
 .attachment {
   width: 100%;
   height: 60vh;
-  background: rgba(0, 0, 0, 0.6) url(../img/team.jpg);
+  background: rgba(0, 0, 0, 0.6) url(./img/baggage.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -200,7 +203,7 @@ img {
   width: 60%;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   flex-direction: column;
   color: white;
   font-size: var(--normal-font-size);
@@ -250,13 +253,14 @@ img {
   width: 100%;
   height: 0.18rem;
   left: 0;
-  top: 2rem;
+  top: 1.2rem;
   background-color: var(--first-color);
 }
 
 .nav__logo {
   color: var(--second-color);
   font-size: 30px;
+  text-decoration: none;
 }
 
 .nav__toggle {
@@ -272,7 +276,7 @@ img {
   width: 100%;
   height: 0.18rem;
   left: 0;
-  top: 2rem;
+  top:1.2rem;
   background-color: var(--first-color);
 }
 
@@ -295,7 +299,7 @@ img {
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 25);
 }
 
-/* ===== ABOUT =====*/
+
 
 /* ===== CITIES =====*/
 .cities__container {
@@ -316,41 +320,61 @@ img {
   transform: scale(1.1);
 }
 
-/* ===== CONTACT =====*/
-
-.contact {
-  width: 100%;
-  background-image: url(../img/contact-background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.book-box{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0px 40px 0px;
+}
+/* ===== SINGLE-BOX ===== */
+.tour-card {
+    width: 550px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
-#contacts-tittle {
-  color: white;
+.tour-card__image-wrapper {
+    width: 100%;
+    height: 200px;
+    position: relative;
 }
 
-.contact__input {
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
-  background-color: rgba(177, 176, 189, 0.282);
-  color: #fff;
+.tour-card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
+.tour-card__content {
+    padding: 20px;
+    text-align: center;
 }
+
+.tour-card__content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.tour-card__content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+
+
 
 /* ===== FOOTER =====*/
 .footer {
@@ -413,7 +437,4 @@ img {
   .nav__link {
     color: var(--second-color);
   }
-
 }
-
-
