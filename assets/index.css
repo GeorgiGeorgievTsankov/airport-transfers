@@ -330,9 +330,7 @@ tbody tr:hover {
   margin: 0 var(--mb-2);
 }
 
-.footer__copy {
-  font-size: var(--smaller-font-size);
-}
+
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 480px) {
