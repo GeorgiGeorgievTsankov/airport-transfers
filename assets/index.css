@@ -20,7 +20,27 @@
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+/* About */
 
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#about {
+  padding: 40px 0;
+  background: #ffffff;
+  text-align: center;
+}
+
+#about p {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.6;
+  text-align: center;
+  text-align: justify;
+}
 
 @media screen and (min-width: 968px) {
   :root {
@@ -57,6 +77,10 @@ h1,
 h2,
 p {
   margin: 0;
+}
+
+.book-box h5{
+  color: #666;
 }
 
 ul {
@@ -152,7 +176,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: var(--z-fixed);
+  z-index: 999;
   background-color: white;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
@@ -191,7 +215,7 @@ img {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     
-    padding: 20px;
+    
 }
 
 h1 {
@@ -232,7 +256,22 @@ tbody tr:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .table-responsive {
+    overflow-x: auto;
+  }
+  .table th, .table td {
+    white-space: nowrap;
+  }
+
 }
+
+/* CONTACT-BOX */
+.contact-box{
+  width: 80%;
+  margin: auto;
+}
+
+
 
 /* ===== CITIES =====*/
 .cities__container {
@@ -330,7 +369,9 @@ tbody tr:hover {
   margin: 0 var(--mb-2);
 }
 
-
+.footer__copy {
+  font-size: var(--smaller-font-size);
+}
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 480px) {
